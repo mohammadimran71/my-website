@@ -13,7 +13,64 @@
   box-sizing:border-box;
   font-family:Arial,Helvetica,sans-serif;
 }
+<div class="checkout-modal" id="checkoutModal">
 
+  <div class="checkout-box">
+
+    <div class="checkout-header">
+      <h2>Complete Your Order</h2>
+
+      <button onclick="closeCheckout()">✕</button>
+    </div>
+
+    <p class="checkout-note">
+      Please enter your details to place your order.
+    </p>
+
+    <input
+      type="text"
+      id="customerName"
+      placeholder="Full Name"
+      required
+    >
+
+    <input
+      type="tel"
+      id="customerPhone"
+      placeholder="Mobile Number"
+      required
+    >
+
+    <textarea
+      id="customerAddress"
+      placeholder="Full Address"
+      required
+    ></textarea>
+
+    <input
+      type="text"
+      id="customerCity"
+      placeholder="City"
+      required
+    >
+
+    <input
+      type="text"
+      id="customerPin"
+      placeholder="PIN Code"
+      maxlength="6"
+      required
+    >
+
+    <button
+      class="place-order"
+      onclick="placeOrder()">
+      💬 Place Order on WhatsApp
+    </button>
+
+  </div>
+
+</div>
 body{
   background:#f6f6f6;
   color:#222;
